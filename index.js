@@ -13,8 +13,8 @@ app.use("/cars", CarsRouter);
 
 app.get("/", (req, res) => {
     res.json({
-        title: "Check doc for details",
-        exampleUrl: "/cars/make/Toyota"
+        title: "Check Doc for URLs to use this API",
+        exampleUrl: "/cars/color/Violet"
     });
 });
 

@@ -2,12 +2,6 @@ const router = require("express").Router();
 
 const cars = require("../db/Cars.json");
 
-// TODO: /cars/paginate/:count         -> pagination
-
-// TODO: CREATE, UPDATE, DELETE
-
-
-
 // Route: "/cars"
 // Returns: []cars
 // Description: Returns all cars in DB
