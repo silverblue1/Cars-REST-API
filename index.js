@@ -4,7 +4,6 @@ const cors = require("cors");
 const CarsRouter = require("./routes/CarsRouter.js");
 
 const app = express();
-const port = 8080 || process.env.PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -19,6 +18,6 @@ app.get("/", (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}...`);
+app.listen(8080 || process.env.PORT, () => {
+    console.log(`Check port 8080 or ${process.env.PORT}...`);
 })
