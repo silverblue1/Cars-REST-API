@@ -18,6 +18,8 @@ app.get("/", (req, res) => {
     });
 });
 
-app.listen(8080 || process.env.PORT, () => {
-    console.log(`Check port 8080 or ${process.env.PORT}...`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Check port 8080 or ${PORT}...`);
 })
