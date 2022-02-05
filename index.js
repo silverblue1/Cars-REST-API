@@ -12,6 +12,13 @@ app.use(cors());
 
 app.use("/cars", CarsRouter);
 
+app.get("/", (req, res) => {
+    res.json({
+        title: "Check doc for details",
+        exampleUrl: "/cars/make/Toyota"
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}...`);
 })
